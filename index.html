@@ -60,10 +60,41 @@
       <button class="close" id="closeBooking" aria-label="Cerrar">×</button>
       <div class="booking-intro"><p class="eyebrow">RESERVAS</p><h2>Encuentra<br><em>tu mesa.</em></h2><p>Elige fecha y número de personas. Los horarios se muestran según las mesas disponibles ahora mismo.</p></div>
       <form id="bookingForm">
-        <label>Fecha<input id="date" type="date" required></label>
-        <label>Personas<select id="people"><option value="2">2 personas</option><option value="3">3 personas</option><option value="4">4 personas</option><option value="5">5 personas</option><option value="6">6 personas</option></select></label>
-        <button class="btn btn-dark" type="submit">Ver disponibilidad</button>
-      </form>
+  <label>
+    Fecha
+    <input id="date" type="date" required>
+  </label>
+
+  <label>
+    Personas
+    <select id="people">
+      <option value="2">2 personas</option>
+      <option value="3">3 personas</option>
+      <option value="4">4 personas</option>
+      <option value="5">5 personas</option>
+      <option value="6">6 personas</option>
+    </select>
+  </label>
+
+  <label>
+    Nombre
+    <input id="name" type="text" placeholder="Tu nombre" required>
+  </label>
+
+  <label>
+    Teléfono
+    <input id="phone" type="tel" placeholder="612 345 678" required>
+  </label>
+
+  <label>
+    Email
+    <input id="email" type="email" placeholder="tu@email.com">
+  </label>
+
+  <button class="btn btn-dark" type="submit">
+    Ver disponibilidad
+  </button>
+</form>
       <div class="connection" id="connection"><span></span><b>Conectando con LUME…</b></div>
       <div class="slots" id="slots" aria-live="polite"></div>
     </div>
