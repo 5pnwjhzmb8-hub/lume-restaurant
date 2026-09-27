@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LUME — cocina de autor, producto y fuego.">
+  <title>LUME — Cocina de autor</title>
+  <link rel="icon" href="img/logo-lume.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-noise"></div>
+    <div class="logo-piece p1">L</div><div class="logo-piece p2">U</div>
+    <div class="logo-piece p3">M</div><div class="logo-piece p4">E</div>
+    <div class="intro-sub">COCINA · FUEGO · PRODUCTO</div>
+  </div>
+
+  <header class="site-header" id="header">
+    <a class="brand" href="#inicio" aria-label="LUME inicio"><span class="brand-mark">L</span><span>LUME</span></a>
+    <nav>
+      <a href="#carta">Carta</a><a href="#historia">El restaurante</a><a href="#galeria">Galería</a>
+      <button class="header-reserve" data-open-booking>Reservar mesa</button>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <img src="img/hero-restaurante.jpg" alt="Interior del restaurante LUME">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">BARCELONA · COCINA DE AUTOR</p>
+        <h1>Donde el fuego<br><em>se convierte en memoria.</em></h1>
+        <p class="hero-text">Producto, brasas y una mesa pensada para quedarse un poco más.</p>
+        <div class="hero-actions"><button class="btn btn-gold" data-open-booking>Reservar mesa</button><a class="btn btn-light" href="#carta">Descubrir LUME</a></div>
+      </div>
+      <div class="hero-bottom"><span>Desliza para entrar</span><i></i></div>
+    </section>
+
+    <section class="manifesto reveal" id="historia"><div class="section-kicker">01 — EL RESTAURANTE</div><div class="manifesto-grid"><h2>Una cocina que no necesita levantar la voz.</h2><div><p>En LUME trabajamos el producto con respeto, fuego y tiempo. Una cocina contemporánea con raíces mediterráneas y una carta que cambia con la temporada.</p><p class="muted">La experiencia empieza antes del primer plato: luz baja, vino servido despacio y una mesa preparada para disfrutar.</p></div></div></section>
+
+    <section class="food-feature reveal" id="carta"><div class="feature-image"><img src="img/plato-01.jpg" alt="Plato de cocina de autor"></div><div class="feature-copy"><span class="number">02</span><p class="eyebrow">LA CARTA</p><h2>Producto primero.<br><em>Todo lo demás después.</em></h2><p>Una selección de platos donde el ingrediente es protagonista.</p><div class="mini-menu"><span>Entrantes</span><span>Fuego</span><span>Mar</span><span>Dulce</span></div></div></section>
+
+    <section class="plates reveal"><div class="plate-card tall"><img src="img/plato-02.jpg" alt="Plato de LUME"><span>02 / Temporada</span></div><div class="plate-card"><img src="img/plato-03.jpg" alt="Plato de LUME"><span>03 / Producto</span></div><div class="plate-card"><img src="img/plato-04.jpg" alt="Plato de LUME"><span>04 / Fuego</span></div></section>
+
+    <section class="split-story reveal"><div class="story-image"><img src="img/chef-cocinando.jpg" alt="Chef cocinando en LUME"></div><div class="story-copy"><span class="number">03</span><p class="eyebrow">COCINA ABIERTA</p><h2>Ver cómo<br><em>empieza todo.</em></h2><p>El fuego está a la vista. Cada pase nace en cocina y llega a la mesa sin artificios.</p><a href="#reserva" class="text-link" data-open-booking>Encontrar una mesa <span>↗</span></a></div></section>
+
+    <section class="wine reveal"><div class="wine-copy"><span class="number">04</span><p class="eyebrow">LA BODEGA</p><h2>Una copa<br><em>para acompañar.</em></h2><p>Vinos elegidos para conversar con la carta, desde referencias mediterráneas hasta pequeñas bodegas que merece la pena descubrir.</p></div><div class="wine-image"><img src="img/copas-vino.jpg" alt="Copas de vino"></div></section>
+
+    <section class="gallery reveal" id="galeria"><div class="gallery-head"><div><span class="number">05</span><p class="eyebrow">LUME EN IMÁGENES</p></div><h2>Una mesa<br><em>también se recuerda.</em></h2></div><div class="gallery-grid"><img src="img/restaurante-interior.jpg" alt="Interior de LUME"><img src="img/plato-02.jpg" alt="Plato de LUME"><img src="img/plato-03.jpg" alt="Plato de LUME"><img src="img/plato-04.jpg" alt="Plato de LUME"></div></section>
+
+    <section class="reservation-cta reveal" id="reserva"><div class="cta-inner"><p class="eyebrow">06 — TU MESA</p><h2>¿Nos vemos<br><em>esta noche?</em></h2><p>Consulta la disponibilidad real del restaurante.</p><button class="btn btn-gold big" data-open-booking>Consultar disponibilidad</button><p class="live-note"><span></span> Disponibilidad conectada en tiempo real</p></div></section>
+  </main>
+
+  <footer><div class="footer-brand">LUME</div><div>Barcelona · Cocina de autor</div><div>© 2026 LUME</div><a href="admin.html">Acceso restaurante</a></footer>
+
+  <div class="booking-modal" id="bookingModal" aria-hidden="true">
+    <div class="booking-panel">
+      <button class="close" id="closeBooking" aria-label="Cerrar">×</button>
+      <div class="booking-intro"><p class="eyebrow">RESERVAS</p><h2>Encuentra<br><em>tu mesa.</em></h2><p>Elige fecha y número de personas. Los horarios se muestran según las mesas disponibles ahora mismo.</p></div>
+      <form id="bookingForm">
+        <label>Fecha<input id="date" type="date" required></label>
+        <label>Personas<select id="people"><option value="2">2 personas</option><option value="3">3 personas</option><option value="4">4 personas</option><option value="5">5 personas</option><option value="6">6 personas</option></select></label>
+        <button class="btn btn-dark" type="submit">Ver disponibilidad</button>
+      </form>
+      <div class="connection" id="connection"><span></span><b>Conectando con LUME…</b></div>
+      <div class="slots" id="slots" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+</body>
+</html>

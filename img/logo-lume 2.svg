@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 170" role="img" aria-label="LUME Restaurante">
+  <g fill="none" stroke="#f4eee4" stroke-width="2">
+    <path d="M210 16v24M210 130v24M56 85h24M340 85h24"/>
+  </g>
+  <circle cx="210" cy="85" r="49" fill="none" stroke="#c6a36a" stroke-width="2"/>
+  <path d="M184 105V64h12l14 20 14-20h12v41h-11V80l-15 21h-1l-14-21v25z" fill="#f4eee4"/>
+  <text x="210" y="156" text-anchor="middle" fill="#f4eee4" font-family="Georgia,serif" font-size="20" letter-spacing="7">L U M E</text>
+</svg>

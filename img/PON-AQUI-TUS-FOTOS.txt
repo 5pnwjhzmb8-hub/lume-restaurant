@@ -1,0 +1,12 @@
+Copia aquí tus 8 fotos y usa EXACTAMENTE estos nombres:
+
+- hero-restaurante.jpg
+- restaurante-interior.jpg
+- chef-cocinando.jpg
+- copas-vino.jpg
+- plato-01.jpg
+- plato-02.jpg
+- plato-03.jpg
+- plato-04.jpg
+
+No cambies mayúsculas/minúsculas ni la extensión si luego cambias el HTML.

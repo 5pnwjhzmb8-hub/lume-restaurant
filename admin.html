@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LUME · Panel restaurante</title><link rel="stylesheet" href="admin.css"></head>
+<body>
+<div class="shell">
+  <header><a href="index.html" class="brand">LUME</a><span>Panel del restaurante</span><button id="logout" hidden>Cerrar sesión</button></header>
+  <main>
+    <section id="loginView" class="card">
+      <p class="eyebrow">ACCESO PRIVADO</p><h1>Gestiona tus mesas.</h1><p>Inicia sesión para cambiar la disponibilidad que verá la web pública.</p>
+      <form id="loginForm"><label>Email<input id="email" type="email" autocomplete="email" required></label><label>Contraseña<input id="password" type="password" autocomplete="current-password" required></label><button>Entrar al panel</button><p id="loginMsg" class="msg"></p></form>
+    </section>
+    <section id="adminView" hidden>
+      <div class="top"><div><p class="eyebrow">DISPONIBILIDAD</p><h1>Mesas de LUME</h1><p id="status">Cargando…</p></div><div class="legend"><span class="available"></span> Disponible <span class="busy"></span> Ocupada</div></div>
+      <div id="tables" class="tables"></div>
+    </section>
+  </main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="admin.js"></script>
+</body></html>
