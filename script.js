@@ -75,8 +75,16 @@ document.addEventListener("DOMContentLoaded",()=>{
 });
 
 function openBooking(){
+
+  document.activeElement?.blur();
+
   modal?.classList.add("open");
   modal?.setAttribute("aria-hidden","false");
+
+  setTimeout(()=>{
+    document.activeElement?.blur();
+  },100);
+
   loadAvailability();
 }
 
