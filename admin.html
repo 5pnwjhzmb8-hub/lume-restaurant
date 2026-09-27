@@ -12,6 +12,64 @@
     <section id="adminView" hidden>
       <div class="top"><div><p class="eyebrow">DISPONIBILIDAD</p><h1>Mesas de LUME</h1><p id="status">Cargando…</p></div><div class="legend"><span class="available"></span> Disponible <span class="busy"></span> Ocupada</div></div>
       <div id="tables" class="tables"></div>
+      <section class="blocks">
+  <div class="top">
+    <div>
+      <p class="eyebrow">BLOQUEAR MESA</p>
+      <h2>Bloqueos por horario</h2>
+      <p>Bloquea una mesa solo para una fecha y hora concreta.</p>
+    </div>
+  </div>
+
+  <div class="block-form">
+    <label>
+      Fecha
+      <input id="blockDate" type="date">
+    </label>
+
+    <label>
+      Hora
+      <select id="blockTime">
+        <option value="20:00">20:00</option>
+        <option value="20:30">20:30</option>
+        <option value="21:00">21:00</option>
+        <option value="21:30">21:30</option>
+        <option value="22:00">22:00</option>
+      </select>
+    </label>
+
+    <label>
+      Mesa
+      <select id="blockTable"></select>
+    </label>
+
+    <label>
+      Motivo
+      <input
+        id="blockReason"
+        type="text"
+        placeholder="Ej. reservada para evento"
+      >
+    </label>
+
+    <button id="blockButton" type="button">
+      Bloquear mesa
+    </button>
+  </div>
+
+  <div id="blocksList"></div>
+</section>
+      <section class="reservations">
+  <div class="top">
+    <div>
+      <p class="eyebrow">RESERVAS</p>
+      <h2>Reservas del día</h2>
+      <input id="reservationDate" type="date">
+    </div>
+  </div>
+
+  <div id="reservationsList"></div>
+</section>
     </section>
   </main>
 </div>
