@@ -31,13 +31,8 @@ document.addEventListener("DOMContentLoaded",()=>{
     date.value=date.min;
   }
 
-  document.querySelectorAll("[data-open-booking]").forEach(b => {
-  b.addEventListener("click", function(event) {
-    event.preventDefault();
-    alert("EL BOTÓN FUNCIONA");
-    openBooking(event);
-  });
-});
+  document.querySelectorAll("[data-open-booking]")
+  .forEach(b => b.addEventListener("click", openBooking));
 document.querySelectorAll('a[href="#carta"]').forEach(link => {
   link.addEventListener("click", event => {
     const destino = document.getElementById("carta");
@@ -96,19 +91,8 @@ document.querySelectorAll('a[href="#carta"]').forEach(link => {
 function openBooking(event) {
   event?.preventDefault();
 
-  console.log("LUME: abrir formulario");
-
-  if (!modal) {
-    console.error("LUME: bookingModal NO encontrado");
-    return;
-  }
-
-  modal.classList.add("open");
-  modal.setAttribute("aria-hidden", "false");
-
-  modal.style.opacity = "1";
-  modal.style.visibility = "visible";
-  modal.style.display = "block";
+  modal?.classList.add("open");
+  modal?.setAttribute("aria-hidden", "false");
 
   loadAvailability();
 }
