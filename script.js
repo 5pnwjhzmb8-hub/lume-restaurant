@@ -31,8 +31,13 @@ document.addEventListener("DOMContentLoaded",()=>{
     date.value=date.min;
   }
 
-  document.querySelectorAll("[data-open-booking]")
-    .forEach(b=>b.addEventListener("click",openBooking));
+  document.querySelectorAll("[data-open-booking]").forEach(b => {
+  b.addEventListener("click", function(event) {
+    event.preventDefault();
+    alert("EL BOTÓN FUNCIONA");
+    openBooking(event);
+  });
+});
 document.querySelectorAll('a[href="#carta"]').forEach(link => {
   link.addEventListener("click", event => {
     const destino = document.getElementById("carta");
