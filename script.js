@@ -74,16 +74,10 @@ document.addEventListener("DOMContentLoaded",()=>{
   loadAvailability();
 });
 
-function openBooking(){
 
-  document.activeElement?.blur();
-
+function openBooking() {
   modal?.classList.add("open");
-  modal?.setAttribute("aria-hidden","false");
-
-  setTimeout(()=>{
-    document.activeElement?.blur();
-  },100);
+  modal?.setAttribute("aria-hidden", "false");
 
   loadAvailability();
 }
