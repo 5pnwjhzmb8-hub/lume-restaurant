@@ -102,3 +102,16 @@
     padding: 30px;
   }
 }
+@media(max-width:800px){
+  .booking-modal{
+    display:block;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+    padding:20px;
+  }
+
+  .booking-panel{
+    margin:20px auto;
+    max-height:none;
+  }
+}

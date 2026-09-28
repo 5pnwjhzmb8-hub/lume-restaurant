@@ -88,16 +88,8 @@ document.querySelectorAll('a[href="#carta"]').forEach(link => {
 });
 
 
-let bookingScrollPosition = 0;
-
 function openBooking(event) {
   event?.preventDefault();
-
-  bookingScrollPosition = window.scrollY;
-
-  document.body.style.position = "fixed";
-  document.body.style.top = `-${bookingScrollPosition}px`;
-  document.body.style.width = "100%";
 
   modal?.classList.add("open");
   modal?.setAttribute("aria-hidden", "false");
@@ -108,12 +100,6 @@ function openBooking(event) {
 function closeBooking() {
   modal?.classList.remove("open");
   modal?.setAttribute("aria-hidden", "true");
-
-  document.body.style.position = "";
-  document.body.style.top = "";
-  document.body.style.width = "";
-
-  window.scrollTo(0, bookingScrollPosition);
 }
 
 function setConnection(ok,msg){
