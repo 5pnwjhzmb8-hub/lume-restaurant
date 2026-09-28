@@ -91,8 +91,19 @@ document.querySelectorAll('a[href="#carta"]').forEach(link => {
 function openBooking(event) {
   event?.preventDefault();
 
-  modal?.classList.add("open");
-  modal?.setAttribute("aria-hidden", "false");
+  console.log("LUME: abrir formulario");
+
+  if (!modal) {
+    console.error("LUME: bookingModal NO encontrado");
+    return;
+  }
+
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden", "false");
+
+  modal.style.opacity = "1";
+  modal.style.visibility = "visible";
+  modal.style.display = "block";
 
   loadAvailability();
 }
