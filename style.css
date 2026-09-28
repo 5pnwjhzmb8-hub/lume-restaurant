@@ -102,3 +102,23 @@
     padding: 30px;
   }
 }
+/* LUME — Corrección modal en Safari móvil */
+.booking-modal {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+.booking-panel {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}
+
+.booking-panel input,
+.booking-panel select {
+  font-size: 16px;
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: auto;
+  touch-action: manipulation;
+}
