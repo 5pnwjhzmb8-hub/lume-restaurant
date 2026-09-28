@@ -8,3 +8,97 @@
   opacity: 1 !important;
 }
 
+/* LUME — Ubicación */
+.location-section {
+  padding: 11vw 8vw;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 8vw;
+  align-items: center;
+}
+
+.location-copy h2 {
+  font: 500 clamp(2.8rem, 5vw, 5.5rem)/1 "Playfair Display", serif;
+  margin: 25px 0;
+}
+
+.location-copy h2 em {
+  color: var(--gold);
+}
+
+.location-copy > p:not(.eyebrow) {
+  max-width: 480px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.location-details {
+  margin-top: 40px;
+}
+
+.location-details > div {
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+}
+
+.location-details span {
+  font-size: 10px;
+  letter-spacing: .18em;
+  color: var(--muted);
+}
+
+.location-details p {
+  margin: 9px 0;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+}
+
+.location-details small {
+  display: block;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.location-card {
+  min-height: 440px;
+  background: #191713;
+  color: var(--paper);
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.location-decoration {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font: italic 400 280px/.9 "Playfair Display", serif;
+  color: rgba(180,147,92,.18);
+}
+
+.location-card h3 {
+  position: relative;
+  font: 500 clamp(2.2rem, 4vw, 4rem)/1.05 "Playfair Display", serif;
+  margin: 20px 0 35px;
+}
+
+.location-card > span {
+  font-size: 10px;
+  letter-spacing: .2em;
+  color: #c5b28f;
+}
+
+@media(max-width:800px) {
+  .location-section {
+    grid-template-columns: 1fr;
+    padding: 18vw 7vw;
+  }
+
+  .location-card {
+    min-height: 360px;
+    padding: 30px;
+  }
+}

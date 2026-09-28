@@ -1,0 +1,299 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Descubre la carta de LUME: cocina mediterránea, producto de temporada y fuego.">
+  <title>La carta — LUME</title>
+  <link rel="icon" href="img/logo-lume.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .menu-page {
+      padding: 150px 8vw 100px;
+      min-height: 100vh;
+    }
+
+    .menu-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 65px;
+    }
+
+    .menu-top a {
+      font-size: 13px;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 6px;
+    }
+
+    .menu-heading {
+      max-width: 760px;
+      margin-bottom: 75px;
+    }
+
+    .menu-heading h1 {
+      font: 500 clamp(3.8rem, 9vw, 8rem)/.95 "Playfair Display", serif;
+      margin: 25px 0;
+    }
+
+    .menu-heading h1 em {
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    .menu-heading p:last-child {
+      color: var(--muted);
+      line-height: 1.8;
+      max-width: 500px;
+    }
+
+    .menu-category {
+      display: grid;
+      grid-template-columns: .7fr 1.3fr;
+      gap: 8vw;
+      padding: 45px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .menu-category h2 {
+      font: 500 clamp(2rem, 4vw, 3.5rem)/1 "Playfair Display", serif;
+      margin: 0;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .menu-item h3 {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0 0 8px;
+    }
+
+    .menu-item p {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--muted);
+      margin: 0;
+      max-width: 440px;
+    }
+
+    .menu-price {
+      white-space: nowrap;
+      font: 500 19px "Playfair Display", serif;
+    }
+
+    .menu-note {
+      margin-top: 50px;
+      padding: 25px;
+      background: #e5dccb;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .menu-reserve {
+      text-align: center;
+      padding: 65px 20px;
+      background: #191713;
+      color: var(--paper);
+      margin-top: 70px;
+    }
+
+    .menu-reserve h2 {
+      font: 500 clamp(2.5rem, 5vw, 4.5rem)/1 "Playfair Display", serif;
+    }
+
+    .menu-reserve p {
+      color: #d5cfc3;
+      line-height: 1.8;
+    }
+
+    @media(max-width:700px) {
+      .menu-page {
+        padding: 115px 7vw 65px;
+      }
+
+      .menu-top {
+        align-items: flex-start;
+      }
+
+      .menu-category {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .menu-item h3 {
+        font-size: 14px;
+      }
+
+      .menu-item p {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header scrolled">
+    <a class="brand" href="index.html#inicio">
+      <span class="brand-mark">L</span>
+      <span>LUME</span>
+    </a>
+    <nav>
+      <a href="index.html#historia">El restaurante</a>
+      <a href="index.html#galeria">Galería</a>
+      <a href="index.html#reserva">Reservas</a>
+    </nav>
+    <a class="header-reserve" href="index.html#reserva">Volver a LUME</a>
+  </header>
+
+  <main class="menu-page">
+    <div class="menu-top">
+      <span class="eyebrow">COCINA · FUEGO · PRODUCTO</span>
+      <a href="index.html">← Página principal</a>
+    </div>
+
+    <div class="menu-heading">
+      <p class="eyebrow">LA CARTA DE LUME</p>
+      <h1>El placer de<br><em>compartir mesa.</em></h1>
+      <p>
+        Una cocina mediterránea de temporada donde el producto,
+        las brasas y el tiempo encuentran su lugar.
+      </p>
+    </div>
+
+    <section class="menu-category">
+      <div>
+        <span class="eyebrow">01 — PARA EMPEZAR</span>
+        <h2>Entrantes</h2>
+      </div>
+      <div>
+        <article class="menu-item">
+          <div>
+            <h3>Pan de masa madre y mantequilla ahumada</h3>
+            <p>Pan de fermentación lenta, mantequilla de hierbas y un toque de humo.</p>
+          </div>
+          <span class="menu-price">6 €</span>
+        </article>
+        <article class="menu-item">
+          <div>
+            <h3>Tomates de temporada</h3>
+            <p>Tomates seleccionados, crema suave de queso y aceite de albahaca.</p>
+          </div>
+          <span class="menu-price">14 €</span>
+        </article>
+        <article class="menu-item">
+          <div>
+            <h3> Croqueta cremosa de setas</h3>
+            <p>Setas salteadas, bechamel suave y acabado crujiente.</p>
+          </div>
+          <span class="menu-price">12 €</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-category">
+      <div>
+        <span class="eyebrow">02 — DEL MAR</span>
+        <h2>Mar</h2>
+      </div>
+      <div>
+        <article class="menu-item">
+          <div>
+            <h3>Lubina a la brasa</h3>
+            <p>Lubina con verduras de temporada y salsa ligera de limón.</p>
+          </div>
+          <span class="menu-price">26 €</span>
+        </article>
+        <article class="menu-item">
+          <div>
+            <h3>Arroz meloso de mar</h3>
+            <p>Arroz cremoso con fumet casero, marisco y un toque de azafrán.</p>
+          </div>
+          <span class="menu-price">24 €</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-category">
+      <div>
+        <span class="eyebrow">03 — EL FUEGO</span>
+        <h2>De las brasas</h2>
+      </div>
+      <div>
+        <article class="menu-item">
+          <div>
+            <h3>Pollo de corral a la brasa</h3>
+            <p>Marinado de hierbas, patatas asadas y jugo reducido.</p>
+          </div>
+          <span class="menu-price">21 €</span>
+        </article>
+        <article class="menu-item">
+          <div>
+            <h3>Entrecot de vaca madurada</h3>
+            <p>Cocinado a la brasa, con patatas rústicas y salsa de pimienta.</p>
+          </div>
+          <span class="menu-price">32 €</span>
+        </article>
+        <article class="menu-item">
+          <div>
+            <h3>Verduras de temporada a la brasa</h3>
+            <p>Selección vegetal con aceite de hierbas y frutos secos.</p>
+          </div>
+          <span class="menu-price">18 €</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-category">
+      <div>
+        <span class="eyebrow">04 — EL FINAL</span>
+        <h2>Postres</h2>
+      </div>
+      <div>
+        <article class="menu-item">
+          <div>
+            <h3>Tarta cremosa de queso</h3>
+            <p>Textura suave, interior cremoso y frutos rojos.</p>
+          </div>
+          <span class="menu-price">9 €</span>
+        </article>
+        <article class="menu-item">
+          <div>
+            <h3>Chocolate, avellana y sal</h3>
+            <p>Chocolate intenso, praliné de avellana y un punto de sal.</p>
+          </div>
+          <span class="menu-price">10 €</span>
+        </article>
+      </div>
+    </section>
+
+    <div class="menu-note">
+      <strong>Una nota de LUME</strong><br>
+      Esta carta, sus platos y sus precios son ejemplos ficticios para la
+      demostración de la web. En un restaurante real, consulta los alérgenos
+      y la disponibilidad de cada plato con el establecimiento.
+    </div>
+
+    <section class="menu-reserve">
+      <p class="eyebrow">TU MESA TE ESPERA</p>
+      <h2>La experiencia<br><em>continúa en la mesa.</em></h2>
+      <p>Descubre LUME y consulta la disponibilidad para tu visita.</p>
+      <a class="btn btn-gold" href="index.html#reserva">Reservar mesa</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">LUME</div>
+    <div>Barcelona · Cocina de autor</div>
+    <div>© 2026 LUME</div>
+    <a href="index.html#inicio">Volver arriba</a>
+  </footer>
+</body>
+</html>
