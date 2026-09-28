@@ -33,7 +33,20 @@ document.addEventListener("DOMContentLoaded",()=>{
 
   document.querySelectorAll("[data-open-booking]")
     .forEach(b=>b.addEventListener("click",openBooking));
+document.querySelectorAll('a[href="#carta"]').forEach(link => {
+  link.addEventListener("click", event => {
+    const destino = document.getElementById("carta");
 
+    if (!destino) return;
+
+    event.preventDefault();
+
+    destino.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  });
+});
   document.getElementById("closeBooking")
     ?.addEventListener("click",closeBooking);
 

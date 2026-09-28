@@ -121,4 +121,28 @@
   appearance: none;
   pointer-events: auto;
   touch-action: manipulation;
+}/* LUME — Fix modal reservas en Safari iPhone */
+@media (max-width: 800px) {
+  .booking-modal {
+    position: fixed;
+    inset: 0;
+    display: block;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 12px;
+  }
+
+  .booking-panel {
+    width: 100%;
+    max-height: none;
+    height: auto;
+    overflow: visible;
+    margin: 0 auto;
+    padding: 45px 22px 28px;
+  }
+
+  .booking-panel input,
+  .booking-panel select {
+    font-size: 16px;
+  }
 }
