@@ -22,7 +22,7 @@ const emailInput=document.getElementById("email");
 let selectedTime=null;
 
 document.addEventListener("DOMContentLoaded",()=>{
-
+  window.scrollTo(0, 0);
   setTimeout(()=>intro?.classList.add("play"),80);
   setTimeout(()=>intro?.classList.add("done"),2200);
 
